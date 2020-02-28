@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="3dp"
+    tools:context=".ItemRecyclerViewRestaurantFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imageView_SiSenor"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="matrix"
+            android:src="@drawable/si_senor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TextViewNomeRestaurante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:text="Tony's Restaurante"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:layout_below="@id/imageView_SiSenor" />
+
+        <TextView
+            android:id="@+id/TextViewEndRestaurante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:text="Endereço"
+            android:textColor="#CC000000"
+            android:textSize="14sp"
+            android:layout_below="@id/TextViewNomeRestaurante" />
+
+        <TextView
+            android:id="@+id/TextViewHoraRestaurante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:text="Hora"
+            android:textColor="#CC000000"
+            android:textSize="14sp"
+            android:layout_below="@id/TextViewEndRestaurante"
+            android:paddingBottom="16dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
